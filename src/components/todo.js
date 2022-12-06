@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import binIcon from "../images/delete.svg";
 import plus from "../images/plus.svg";
 
@@ -12,10 +12,25 @@ export default function Todo(props) {
   };
 
   const date = new Date();
-  let day = date.getDate();
-  let month = date.getMonth() + 1;
-  let minutes = date.getUTCMinutes();
-  let hour = date.getHours();
+  //let day = date.getDate();
+  // let month = date.getMonth() + 1;
+  // let minutes = date.getminutes();
+  // let hour = date.getHours();
+  const time = date.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
+  });
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = weekday[date.getDay()];
 
   return (
     <ul className="flex flex-col gap-5 max-h-[300px] overflow-y-auto">
@@ -24,7 +39,7 @@ export default function Todo(props) {
           <div className="flex flex-col gap-1 m-0 ">
             <span className="m-0">{task.task || "Buy chocolates"}</span>
             <span className="text-xs text-[#888] m-0">
-              {day}-{month} at {hour}:{minutes} {hour >= 12 ? "PM" : "AM"}
+              {day} at {time}
             </span>
           </div>
           <div className="mr-0 flex gap-5 align-middle items-baseline relative">
