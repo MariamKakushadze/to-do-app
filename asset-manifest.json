@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/to-do-app/static/css/main.bead7a0d.css",
-    "main.js": "/to-do-app/static/js/main.045d9106.js",
+    "main.js": "/to-do-app/static/js/main.baad87a8.js",
     "static/media/Rectangle 2.png": "/to-do-app/static/media/Rectangle 2.3471dfd8cffc2ca7c549.png",
     "index.html": "/to-do-app/index.html",
     "static/media/plus.svg": "/to-do-app/static/media/plus.6eab33f34a75a5c1af675a94ecbb3ebb.svg",
     "static/media/delete.svg": "/to-do-app/static/media/delete.32cda3644df5d2a48b7d26686be862c9.svg",
     "static/media/done.svg": "/to-do-app/static/media/done.38a80c672eebdbd0f126244dba5cf3bc.svg",
     "main.bead7a0d.css.map": "/to-do-app/static/css/main.bead7a0d.css.map",
-    "main.045d9106.js.map": "/to-do-app/static/js/main.045d9106.js.map"
+    "main.baad87a8.js.map": "/to-do-app/static/js/main.baad87a8.js.map"
   },
   "entrypoints": [
     "static/css/main.bead7a0d.css",
-    "static/js/main.045d9106.js"
+    "static/js/main.baad87a8.js"
   ]
 }
