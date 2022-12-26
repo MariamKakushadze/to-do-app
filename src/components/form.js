@@ -42,6 +42,7 @@ export default function Form(props) {
           style={
             error !== "" ? { border: "1px solid red" } : { border: "none" }
           }
+          value={input}
         />
         <p className="text-red-500 absolute top-12 text-xs">{error}</p>
         <div className="absolute bg-[#20EEB0] w-5 h-5 rounded-xl top-4 left-2  p-[5px]">

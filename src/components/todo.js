@@ -12,25 +12,14 @@ export default function Todo(props) {
   };
 
   const date = new Date();
-  //let day = date.getDate();
-  // let month = date.getMonth() + 1;
-  // let minutes = date.getminutes();
-  // let hour = date.getHours();
+
   const time = date.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
+    hour: "numeric",
+    minute: "numeric",
     hour12: true,
   });
-  const weekday = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let day = weekday[date.getDay()];
+
+  let day = date.toLocaleDateString("en-US", { weekday: "long" });
 
   return (
     <ul className="flex flex-col gap-5 max-h-[300px] overflow-y-auto">
